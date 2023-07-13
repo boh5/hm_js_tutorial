@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let str = '123'
+  console.log(Number(str))  // 123
+  console.log(Number('bo'))  // NaN
+
+  console.log(Number('12px'))  // NaN
+
+  console.log(parseInt('12px'))  // 12
+  console.log(parseInt('12.34px'))  // 12
+
+  console.log(parseFloat('12px'))  // 12
+  console.log(parseFloat('12.34px'))  // 12.34
+  console.log(parseFloat('abc12.34px'))  // NaN
+</script>
+</body>
+</html>
