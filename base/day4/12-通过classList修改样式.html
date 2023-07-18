@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      color: #333;
+    }
+
+    .active {
+      color: red;
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+<div class="box">文字</div>
+
+<script>
+  const box = document.querySelector('.box')
+  // add() 追加类
+  box.classList.add('active')
+  // remove() 删除类
+  box.classList.remove('box')
+  // toggle() 切换类：有就删掉，没有就加上
+  box.classList.toggle('active')
+</script>
+</body>
+</html>
