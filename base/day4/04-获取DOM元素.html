@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">123</div>
+<div class="box">abc</div>
+<p id="nav">导航栏</p>
+<ul class="nav">
+    <li>test 1</li>
+    <li>test 2</li>
+    <li>test 3</li>
+</ul>
+<script>
+    // 1. 获取匹配的第一个元素
+    const box = document.querySelector('div')
+    console.log(box)  // <div class="box">123</div>
+
+    const nav = document.querySelector('#nav')
+    console.log(nav)
+    nav.style.color = 'red'
+
+    const li = document.querySelector('ul li:first-child')
+    console.log(li)
+
+    // 2. 获取匹配的多个元素
+    const lis = document.querySelectorAll('ul li')
+    console.log(lis)
+
+    // 3. 遍历 querySelectorAll 出来的`伪数组`. 伪数组：没有 pop, push 方法
+    const navLis = document.querySelectorAll('.nav li')
+    for (let i = 0; i < navLis.length; i++) {
+        console.log(navLis[i])
+    }
+    for (let ele of navLis) {
+        console.log(ele)
+    }
+</script>
+</body>
+</html>
