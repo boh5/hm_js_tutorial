@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" value="电脑">
+<input type="checkbox" name="" id="check">
+<button id="but">点击</button>
+<script>
+  const uname = document.querySelector('input')
+  console.log(uname.value)
+  uname.value = '我要买电脑'
+  uname.type = 'password'
+
+  const ipt = document.querySelector('#check')
+  console.log(ipt.checked)
+  ipt.checked = true
+
+  const but = document.querySelector('#but')
+  console.log(but.disabled)
+  but.disabled = true
+</script>
+</body>
+</html>
